@@ -1,21 +1,12 @@
-Jeremiah Cha
+Ahmet Akbiyik
 ================
 
-This repository contains the code used to build my personal website,
-available at [jcha1997.github.io](https://jcha1997.github.io) or
-[jeremiahcha.com](https://www.jeremiahcha.com).
 
 ### Acknowledgements
 
 The website is built off the [minimal
 theme](https://github.com/orderedlist/minimal) created by Steve Smith.
-Content was inspired by [@emmaremy](https://github.com/emmaremy) and
-[@sonoshah](https://github.com/sonoshah). Design elements can be
+Content was inspired by Jeremiah Cha. Design elements can be
 attributed to [Brad Bolman](http://brad.bolman.com/) and
 [Andrea](https://a-flair.com/portfolio).
 
-### Troubleshooting
-
-If you have any trouble with accessing my website, please feel free to
-file an [issue](https://github.com/jcha1997/jcha1997.github.io/issues)
-or send an email.
