@@ -47,7 +47,7 @@ a, a:link, a:focus, a:hover, a:active, a:visited {
 .wrapper {
   width:860px;
   margin:0 auto;
-  margin-left : -20px;
+  margin-left : -5px;
   
 
 }
@@ -167,6 +167,7 @@ section {
   width:600px;
   float:right;
   padding-bottom:50px;
+  margin-left:20px
 }
 
 small {
