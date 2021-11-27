@@ -49,6 +49,11 @@ a, a:link, a:focus, a:hover, a:active, a:visited {
   margin:0 auto;
 }
 
+.wrapper_center {
+  width:860px;
+  margin:0;
+}
+
 blockquote {
   border-left:1px solid #e5e5e5;
   margin:0;
@@ -187,6 +192,11 @@ footer {
 @media print, screen and (max-width: 960px) {
 
   div.wrapper {
+    width:auto;
+    margin:0;
+  }
+  
+    div.wrapper_center {
     width:auto;
     margin:0;
   }
