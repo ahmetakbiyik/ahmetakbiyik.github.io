@@ -51,7 +51,7 @@ a, a:link, a:focus, a:hover, a:active, a:visited {
 
 .wrapper_center {
   width:860px;
-  margin:0;
+  margin:-5;
 }
 
 blockquote {
@@ -198,7 +198,7 @@ footer {
   
     div.wrapper_center {
     width:auto;
-    margin:0;
+    margin:-5;
   }
 
   header, section, footer {
