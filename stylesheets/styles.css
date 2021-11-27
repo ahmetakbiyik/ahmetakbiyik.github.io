@@ -46,7 +46,10 @@ a, a:link, a:focus, a:hover, a:active, a:visited {
 
 .wrapper {
   width:860px;
-  margin: auto;
+  margin:0 auto;
+  margin-left : -20px;
+  
+
 }
 
 
@@ -161,7 +164,7 @@ header ul a strong {
 }
 
 section {
-  width:700px;
+  width:600px;
   float:right;
   padding-bottom:50px;
 }
