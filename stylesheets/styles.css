@@ -49,10 +49,6 @@ a, a:link, a:focus, a:hover, a:active, a:visited {
   margin:0 auto;
 }
 
-.wrapper_center {
-  width:860px;
-  margin:0 0 20px;
-}
 
 blockquote {
   border-left:1px solid #e5e5e5;
@@ -189,17 +185,13 @@ footer {
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
-@media print, screen and (max-width: 960px) {
+@media print, screen and (max-width: 1260px) {
 
   div.wrapper {
     width:auto;
     margin:0;
   }
   
-    div.wrapper_center {
-    width:auto;
-    margin:-5;
-  }
 
   header, section, footer {
     float:none;
