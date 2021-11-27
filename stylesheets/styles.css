@@ -1,0 +1,393 @@
+body {
+  background-color: #fff;
+  padding:50px;
+  font: 15px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  color:#595959;
+  font-weight:320;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color:#222;
+  margin:0 0 20px;
+}
+
+p, table, pre, dl {
+  margin:0 0 20px;
+}
+
+ul, ol {
+  margin:0 0 20px; 
+  padding-left: 20px;
+}
+
+h1, h2, h3 {
+  line-height:1.1;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+h2 {
+  color:#393939;
+  font-weight: 500;
+}
+
+h3, h4, h5, h6 {
+  color:#494949;
+  font-weight: 500;
+}
+
+a, a:link, a:focus, a:hover, a:active, a:visited {
+  color: #A51C30;
+  text-decoration-line: none;
+}
+
+.wrapper {
+  width:860px;
+  margin:0 auto;
+}
+
+blockquote {
+  border-left:1px solid #e5e5e5;
+  margin:0;
+  padding:0 0 0 20px;
+  font-style:italic;
+}
+
+code, pre {
+  font-family:Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
+  color:#333;
+}
+
+pre {
+  padding:8px 15px;
+  background: #f8f8f8;
+  border-radius:5px;
+  border:1px solid #e5e5e5;
+  overflow-x: auto;
+}
+
+table {
+  width:100%;
+  border-collapse:collapse;
+}
+
+th, td {
+  text-align:left;
+  padding:5px 10px;
+  border-bottom:1px solid #e5e5e5;
+}
+
+dt {
+  color:#444;
+  font-weight:500;
+}
+
+th {
+  color:#444;
+}
+
+img {
+  max-width:100%;
+}
+
+header {
+  width:270px;
+  float:left;
+  position:fixed;
+  -webkit-font-smoothing:subpixel-antialiased;
+}
+
+header ul {
+  list-style:none;
+  height:40px;
+  padding:0;
+  background: #f4f4f4;
+  border-radius:5px;
+  border:1px solid #e0e0e0;
+  width:270px;
+}
+
+header li {
+  width:89px;
+  float:left;
+  border-right:1px solid #e0e0e0;
+  height:40px;
+}
+
+header li:first-child a {
+  border-radius:5px 0 0 5px;
+}
+
+header li:last-child a {
+  border-radius:0 5px 5px 0;
+}
+
+header ul a {
+  line-height:1;
+  font-size:11px;
+  color:#999;
+  display:block;
+  text-align:center;
+  padding-top:6px;
+  height:34px;
+}
+
+header ul a:hover {
+  color:#999;
+}
+
+header ul a:active {
+  background-color:#f0f0f0;
+}
+
+strong {
+  color:#222;
+  font-weight:500;
+}
+
+header ul li + li + li {
+  border-right:none;
+  width:89px;
+}
+
+header ul a strong {
+  font-size:14px;
+  display:block;
+  color:#222;
+}
+
+section {
+  width:500px;
+  float:right;
+  padding-bottom:50px;
+}
+
+small {
+  font-size:11px;
+}
+
+hr {
+  border:0;
+  background:#e5e5e5;
+  height:1px;
+  margin:0 0 20px;
+}
+
+footer {
+  width:500px;
+  float:left;
+  position:fixed;
+  bottom:50px;
+  -webkit-font-smoothing:subpixel-antialiased;
+}
+
+@media print, screen and (max-width: 960px) {
+
+  div.wrapper {
+    width:auto;
+    margin:0;
+  }
+
+  header, section, footer {
+    float:none;
+    position:static;
+    width:auto;
+  }
+
+  header {
+    padding-right:320px;
+  }
+
+  section {
+    border:1px solid #e5e5e5;
+    border-width:1px 0;
+    padding:20px 0;
+    margin:0 0 20px;
+  }
+
+  header a small {
+    display:inline;
+  }
+
+  header ul {
+    position:absolute;
+    right:50px;
+    top:52px;
+  }
+}
+
+@media print, screen and (max-width: 720px) {
+  body {
+    word-wrap:break-word;
+  }
+
+  header {
+    padding:0;
+  }
+
+  header ul, header p.view {
+    position:static;
+  }
+
+  pre, code {
+    word-wrap:normal;
+  }
+}
+
+@media print, screen and (max-width: 480px) {
+  body {
+    padding:15px;
+  }
+
+  header ul {
+    width:99%;
+  }
+
+  header li, header ul li + li + li {
+    width:33%;
+  }
+}
+
+@media print {
+  body {
+    padding:0.4in;
+    font-size:12pt;
+    color:#444;
+  }
+}
+
+.fab {
+  color: #000000;
+  font-size: 2em!important;
+  padding-right: 10px!important;
+}
+
+
+.fas {
+  color: #000000;
+  font-size: 2em!important;
+  padding-right: 10px!important;
+}
+
+mark_harvard {
+  background-color: #A51C30!important;
+  color: white!important;
+  box-shadow: 0 0 0 0.5px #A51C30!important;
+}
+
+mark_gold {
+  background-color: #C69214;
+  color: white;
+  box-shadow: 0 0 0 0.5px #C69214;
+}
+
+mark_black {
+  background-color: #2F323A;
+  color: white;
+  box-shadow: 0 0 0 .5px #2F323A;
+}
+
+mark_laker {
+  background-color: #C47AC0;
+  color: white;
+  box-shadow: 0 0 0 0.5px #C47AC0;
+}
+
+mark_blue {
+  background-color: #258EA6 ;
+  color: white;
+  box-shadow: 0 0 0 0.5px #258EA6;
+}
+
+mark_yellow {
+  background-color: #E9C46A;
+  color: white;
+  box-shadow: 0 0 0 0.5px #E9C46A;
+}
+
+mark_green {
+  background-color: #2A9D8F;
+  color: white;
+  box-shadow: 0 0 0 0.5px #2A9D8F;
+}
+
+mark_orange {
+  background-color: #F4A261;
+  color: white;
+  box-shadow: 0 0 0 0.5px #F4A261;
+}
+
+mark_turq {
+  background-color: #009FB7;
+  color: white;
+  box-shadow: 0 0 0 0.5px #009FB7;
+}
+
+mark_red {
+  background-color: #E76F51;
+  color: white;
+  box-shadow: 0 0 0 0.5px #E76F51;
+}
+
+mark_twitter {
+  background-color: #1DA1F2;
+  color: white;
+  box-shadow: 0 0 0 0.5px #1DA1F2;
+}
+
+mark_light_purple {
+  background-color: #A7A5C6;
+  color: white;
+  box-shadow: 0 0 0 0.5px #A7A5C6;
+}
+
+mark_charcoal {
+  background-color: #3A6EA5;
+  color: white;
+  box-shadow: 0 0 0 0.5px #3A6EA5;
+}
+
+mark_dodger {
+  background-color: #1e90ff;
+  color: white;
+  box-shadow: 0 0 0 0.5px #1e90ff;
+}
+
+mark_old_lavender {
+  background-color: #736372;
+  color: white;
+  box-shadow: 0 0 0 0.5px #736372;
+}
+
+.tab { margin-left: 40px; }
+
+/* Add a white background color to the top navigation */
+.topnav {
+  background-color: #A51C30;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: right;
+  color: #fff;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #fff;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #fff;
+  color: black;
+}
