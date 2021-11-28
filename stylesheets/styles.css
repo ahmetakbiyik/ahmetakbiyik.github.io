@@ -47,7 +47,6 @@ a, a:link, a:focus, a:hover, a:active, a:visited {
 .wrapper {
   width:830px;
   margin:0 auto;
-  margin-left: -10px;
 }
 
 
@@ -189,8 +188,9 @@ footer {
 @media print, screen and (max-width: 960px) {
 
   div.wrapper {
-    width:auto;
+    width:830px;
     margin:0;
+    
   }
   
 
