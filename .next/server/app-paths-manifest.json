@@ -1,0 +1,12 @@
+{
+  "/_not-found": "app/_not-found.js",
+  "/api/disable-draft/route": "app/api/disable-draft/route.js",
+  "/api/draft/route": "app/api/draft/route.js",
+  "/favicon/icon.ico/route": "app/favicon/icon.ico/route.js",
+  "/posts/[slug]/page": "app/posts/[slug]/page.js",
+  "/works/[slug]/page": "app/works/[slug]/page.js",
+  "/page": "app/page.js",
+  "/about/page": "app/about/page.js",
+  "/works/page": "app/works/page.js",
+  "/posts/page": "app/posts/page.js"
+}
