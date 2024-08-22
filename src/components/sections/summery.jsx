@@ -23,8 +23,8 @@ const Summery = () => {
                                 <h2>
                                     I’m Ahmet Akbiyik, a PhD Candidate in Political Economy and Government.
                                 </h2>
-                                <p>I am a social scientist with a focus on disinformation, migration, social media and survey methods. I have a diverse range of experience having worked across various platforms, such as surveys, Whatsapp, Facebook, X, Telegram.</p>
-                                <p>sadasdasd</p>
+                                <p>I am a social scientist with a focus on disinformation, migration, social media and survey methods.</p>
+                                <p>I have a diverse range of experience having worked across various  where intergroup relations occur, such as surveys, Whatsapp, Facebook, X, Telegram.</p>
                                 <div className="hero-btns">
                                     <a href="contact.html" className="theme-btn">Get In touch<i> <RiMailSendLine size={16} /> </i></a>
                                 </div>
