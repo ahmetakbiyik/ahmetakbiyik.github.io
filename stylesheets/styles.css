@@ -324,9 +324,9 @@ mark_orange {
 }
 
 mark_turq {
-  background-color: #009FB7;
+  background-color: #ad1445;
   color: white;
-  box-shadow: 0 0 0 0.5px #009FB7;
+  box-shadow: 0 0 0 0.5px #ad1445;
 }
 
 mark_red {
@@ -336,9 +336,9 @@ mark_red {
 }
 
 mark_twitter {
-  background-color: #1DA1F2;
+  background-color: #ad1445;
   color: white;
-  box-shadow: 0 0 0 0.5px #1DA1F2;
+  box-shadow: 0 0 0 0.5px #ad1445;
 }
 
 mark_light_purple {
@@ -348,15 +348,15 @@ mark_light_purple {
 }
 
 mark_charcoal {
-  background-color: #3A6EA5;
+  background-color: #ad1445;
   color: white;
-  box-shadow: 0 0 0 0.5px #3A6EA5;
+  box-shadow: 0 0 0 0.5px #ad1445;
 }
 
 mark_dodger {
-  background-color: #1e90ff;
+  background-color: #ad1445;
   color: white;
-  box-shadow: 0 0 0 0.5px #1e90ff;
+  box-shadow: 0 0 0 0.5px #ad1445;
 }
 
 mark_old_lavender {
@@ -369,7 +369,7 @@ mark_old_lavender {
 
 /* Add a white background color to the top navigation */
 .topnav {
-  background-color: #2596be;
+  background-color: #ad1445;
   overflow: hidden;
 }
 
@@ -393,4 +393,35 @@ mark_old_lavender {
 .topnav a.active {
   background-color: #fff;
   color: black;
+}
+button {
+  padding: 14px 8px;
+  margin-top: 0px;
+  margin-bottom: 10px;  /* Added to create space between the button and abstract text */
+  border: none;
+  background-color: #ad1445;
+  color: #fff;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-family: 'Montserrat', sans-serif;  /* Ensure font consistency */
+  font-size: 12px;  /* Adjust font size if necessary */
+
+  
+}
+
+button:hover {
+  background-color: #ad1445;
+  transform: scale(1.05);
+}
+
+#abstract, #abstract2, #abstract3, #abstract4 {
+  font-family: 'Montserrat', sans-serif;  /* Ensure font consistency */
+  font-size: 12px;  /* Adjust font size if necessary */
+  margin-top: 3px;
+  margin-bottom: 10px;  /* Adds space below the abstract */
+  line-height: 1.6;  /* Adjust line height for readability */
+  color: #333;
+  
+
 }
