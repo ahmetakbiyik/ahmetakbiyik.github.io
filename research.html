@@ -114,17 +114,21 @@
           text-align: center;
         }
         .menu-toggle {
-          display: block;
-          position: fixed;
-          top: 10px;
-          right: 10px;
-          background-color: #ad1445;
-          color: white;
-          padding: 10px;
-          border-radius: 50%;
-          font-size: 24px;
-          cursor: pointer;
-        }
+    display: block;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #ad1445;
+    color: white;
+    width: 50px; /* Set the width */
+    height: 50px; /* Set the height */
+    border-radius: 10px; /* Set to 0 for sharp corners, or a small value for slight rounding */
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
         header img {
           width: 50px; /* Adjust the width for mobile */
           height: auto; /* Maintain aspect ratio */
