@@ -128,6 +128,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 0.3s ease;
+}
+/* When the menu is open, position the toggle button at the bottom-right and change its appearance */
+.menu-toggle.open {
+    top: auto;
+    bottom: 10px;
+    right: 10px;
+    background-color: #333; /* Change background color when open */
+}
+
+.menu-toggle.open::before {
+    content: "\00d7"; /* Unicode for '×' (close icon) */
+    font-size: 30px;
 }
     header img {
           width: 150px; /* Adjust the width for mobile */
@@ -209,14 +222,20 @@
 
     <script src="javascripts/scale.fix.js"></script>
     <script>
-      function toggleMenu() {
-        var nav = document.querySelector('.topnav');
-        if (nav.style.display === 'flex') {
-          nav.style.display = 'none';
-        } else {
-          nav.style.display = 'flex';
-        }
-      }
+          function toggleMenu() {
+    var nav = document.querySelector('.topnav');
+    var toggleButton = document.querySelector('.menu-toggle');
+    
+    if (nav.style.display === 'flex') {
+        nav.style.display = 'none';
+        toggleButton.classList.remove('open');
+        toggleButton.innerHTML = '&#9776;'; // Hamburger icon
+    } else {
+        nav.style.display = 'flex';
+        toggleButton.classList.add('open');
+        toggleButton.innerHTML = ''; // Remove inner content since the ::before will handle it
+    }
+}
     </script>
   </body>
 </html>
