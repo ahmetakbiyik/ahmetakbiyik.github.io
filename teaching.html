@@ -1,206 +1,230 @@
 <!doctype html>
 <html>
-  <head>
-    <script type="text/javascript">
-      var host = "ahmetakbiyik.com";
-      if ((host == window.location.host) && (window.location.protocol != "https:"))
-        window.location.protocol = "https";
-    </script>
-    <meta charset="utf-8">
-    <link rel="canonical" href="ahmetakbiyik.com"/>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Ahmet Akbiyik</title>
-    <script src="https://kit.fontawesome.com/d070121437.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="stylesheets/styles.css"/>
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
-    <link rel="manifest" href="/img/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#ad1445">
-    <meta name="theme-color" content="#ffffff">
-    <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Ahmet Akbiyik is a Ph.D. candidate at Harvard Kennedy School">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap">
+<head>
+  <script type="text/javascript">
+    var host = "ahmetakbiyik.com";
+    if ((host == window.location.host) && (window.location.protocol != "https:"))
+      window.location.protocol = "https";
+  </script>
+  <meta charset="utf-8">
+  <link rel="canonical" href="ahmetakbiyik.com"/>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <title>Ahmet Akbiyik</title>
+  <script src="https://kit.fontawesome.com/d070121437.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="stylesheets/styles.css"/>
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+  <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="manifest" href="/img/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#ad1445">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="Ahmet Akbiyik is a Ph.D. candidate at Harvard Kennedy School">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap">
 
-    <style>
-      body {
-        font-family: 'Poppins', sans-serif;
-        background: whitesmoke;
-        color: #333;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-      }
-      h1, h2, p, a {
-        transition: color 0.3s ease, transform 0.3s ease;
-      }
-      h1 a, p a {
-        text-decoration: none;
-        color: #333;
-      }
-      h1 a:hover, p a:hover {
-        color: #ad1445;
-        transform: scale(1.05);
-      }
-      header img {
-        border-radius: 50%;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        transition: transform 0.3s ease;
-      }
-      header img:hover {
-        transform: scale(1.1);
-      }
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      display: flex;
+      justify-content: center;
+    }
+    h1, h2, p, a {
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+    h1 a, p a {
+      text-decoration: none;
+      color: #333;
+    }
+    h1 a:hover, p a:hover {
+      color: #ad1445;
+      transform: scale(1.05);
+    }
+    header img {
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    header img:hover {
+      transform: scale(1.1);
+    }
+    .topnav {
+      display: flex;
+      justify-content: center;
+      gap: 0px;
+    }
+    .topnav a {
+      padding: 14px 10px;
+      display: inline-block;
+      color: #fff;
+      background-color: #ad1445;
+      text-decoration: none;
+      margin: 0 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .topnav a:hover {
+      background-color: #ad1445;
+      transform: scale(1.1);
+    }
+    button {
+      padding: 8px 15px;
+      margin-top: 10px;
+      border: none;
+      background-color: #ad1445;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    button:hover {
+      background-color: #ad1445;
+      transform: scale(1.05);
+    }
+    .wrapper {
+      padding: 20px;
+      position: relative;
+      z-index: 1;
+      background-color: rgba(255, 255, 255, 0.9);
+      max-width: 1200px; /* Optional: Limit the width of the content */
+    }
+    hr {
+      border: none;
+      height: 2px;
+      background-color: #ad1445;
+    }
+
+    #particles-left, #particles-right {
+      position: fixed;
+      top: 0;
+      width: 250px; /* Width of the particle area on each side */
+      height: 100%;
+      z-index: 0;
+    }
+
+    #particles-left {
+      left: 0;
+    }
+
+    #particles-right {
+      right: 0;
+    }
+
+    /* Add a media query for smaller screens */
+    @media (max-width: 768px) {
       .topnav {
-        display: flex;
-        justify-content: center;
-        gap: 0px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ad1445;
+        padding: 10px 0;
       }
       .topnav a {
-        padding: 14px 10px;
-        display: inline-block;
-        color: #fff;
-        background-color: #ad1445;
-        text-decoration: none;
-        margin: 0 10px;
-        border-radius: 5px;
-        transition: background-color 0.3s ease, transform 0.3s ease;
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
       }
-      .topnav a:hover {
-        background-color: #ad1445;
-        transform: scale(1.1);
-      }
-      button {
-        padding: 8px 15px;
-        margin-top: 10px;
-        border: none;
-        background-color: #ad1445;
-        color: #fff;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-      }
-      button:hover {
-        background-color: #ad1445;
-        transform: scale(1.05);
-      }
-      .wrapper {
-        padding: 20px;
-      }
-      hr {
-        border: none;
-        height: 2px;
-        background-color: #ad1445;
-      }
-    
-      /* Add a media query for smaller screens */
-      @media (max-width: 768px) {
-        .topnav {
-          display: none;
-          flex-direction: column;
-          align-items: center;
+      .menu-toggle {
+          display: block;
           position: fixed;
-          bottom: 0;
-          left: 0;
-          width: 100%;
+          top: 10px;
+          right: 10px;
           background-color: #ad1445;
-          padding: 10px 0;
-        }
-        .topnav a {
-          margin: 5px 0;
-          width: 100%;
-          text-align: center;
-        }
-        .menu-toggle {
-    display: block;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    background-color: #ad1445;
-    color: white;
-    width: 50px; /* Set the width */
-    height: 50px; /* Set the height */
-    border-radius: 10px; /* Set to 0 for sharp corners, or a small value for slight rounding */
-    font-size: 24px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease;
-}
-/* When the menu is open, position the toggle button at the bottom-right and change its appearance */
-.menu-toggle.open {
-    top: auto;
-    bottom: 10px;
-    right: 10px;
-    background-color: #333; /* Change background color when open */
-}
+          color: white;
+          width: 50px; /* Set the width */
+          height: 50px; /* Set the height */
+          border-radius: 10px; /* Set to 0 for sharp corners, or a small value for slight rounding */
+          font-size: 24px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: background-color 0.3s ease;
+          z-index: 1000; /* Bring the menu button to the front */
 
-.menu-toggle.open::before {
-    content: "\00d7"; /* Unicode for '×' (close icon) */
-    font-size: 30px;
-}
-        header img {
-          width: 150px; /* Adjust the width for mobile */
-          height: auto; /* Maintain aspect ratio */
-        }
+      }
+      /* When the menu is open, position the toggle button at the bottom-right and change its appearance */
+      .menu-toggle.open {
+          top: auto;
+          bottom: 10px;
+          right: 10px;
+          background-color: #333; /* Change background color when open */
       }
 
-      /* Hide the menu toggle on larger screens */
-      @media (min-width: 769px) {
-        .menu-toggle {
-          display: none;
-        }
+      .menu-toggle.open::before {
+          content: "\00d7"; /* Unicode for '×' (close icon) */
+          font-size: 30px;
       }
-    </style>
-    
+      header img {
+        width: 150px; /* Adjust the width for mobile */
+        height: auto; /* Maintain aspect ratio */
+      }
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160580606-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-160580606-1');
-    </script>
-  </head>
+      #particles-left, #particles-right {
+        display: none; /* Hide particles on small screens */
+      }
+    }
 
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1 style="text-align: center;"><a href="/">Ahmet Akbiyik</a></h1>
-        <div style="text-align: center;">
-          <br>
-          <img src="img/profile2.png" style="width:200px;height:200px;" alt = "profile picture">
-                </div>
+    /* Hide the menu toggle on larger screens */
+    @media (min-width: 769px) {
+      .menu-toggle {
+        display: none;
+      }
+    }
+  </style>
+  
+  <!-- Include Particle.js library -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+
+<body>
+  <!-- Particle.js containers -->
+  <div id="particles-left"></div>
+  <div id="particles-right"></div>
+
+  <div class="wrapper">
+    <header>
+      <h1 style="text-align: center;"><a href="/">Ahmet Akbiyik</a></h1>
+      <div style="text-align: center;">
         <br>
-          <p>
-            Ph.D. candidate <a href="mailto:ahmetakbiyik@g.harvard.edu"><i class="far fa-envelope"></i></a>
-            <br>
-            Political Economy and Government
-            <br>
-            Harvard Kennedy School
-          </p>
-        <hr>
-        <p>
-          <a href="https://www.github.com/ahmetakbiyik" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/ahmet-utku-akbiyik/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://www.orcid.org/0000-0002-0775-7220" target="_blank"><i class="fab fa-orcid"></i></a>
-          <a href="https://www.twitter.com/ahmetakbiyik_en" target="_blank"> <i class="fab fa-twitter"></i></a>
-        </p>
-        <hr>
-      
-      </header>
-      <section>
-          <div class="topnav">
-            <a class="ai ai-2x" href="about.html">About</a>
-            <a class="ai ai-2x" href="research.html">Research</a>
-            <a class="ai ai-2x" href="teaching.html" >Teaching</a>
-            <a class="ai ai-2x" href="photography.html" >Photography</a>
-            <a class="ai ai-2x" href="vita.html">CV</a>
-          </div>
+        <img src="img/profile2.png" style="width:200px;height:200px;" alt = "profile picture">
+      </div>
+      <br>
+      <p>
+        Ph.D. candidate <a href="mailto:ahmetakbiyik@g.harvard.edu"><i class="far fa-envelope"></i></a>
         <br>
+        Political Economy and Government
+        <br>
+        Harvard Kennedy School
+      </p>
+      <hr>
+      <p>
+        <a href="https://www.github.com/ahmetakbiyik" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ahmet-utku-akbiyik/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.orcid.org/0000-0002-0775-7220" target="_blank"><i class="fab fa-orcid"></i></a>
+        <a href="https://www.twitter.com/ahmetakbiyik_en" target="_blank"> <i class="fab fa-twitter"></i></a>
+      </p>
+      <hr>
+    </header>
+    <section>
+      <div class="topnav">
+        <a class="ai ai-2x" href="about.html">About</a>
+        <a class="ai ai-2x" href="research.html">Research</a>
+        <a class="ai ai-2x" href="teaching.html" >Teaching</a>
+        <a class="ai ai-2x" href="photography.html" >Photography</a>
+        <a class="ai ai-2x" href="vita.html">CV</a>
+      </div>
+      <br>
         
         <h2>Teaching Assistant</h2>
         <ul>
@@ -217,7 +241,7 @@
 
               </div>
           </li>
-
+          <br>
           <li>
             Survey Research Methods (by Chase Harrison, Spring 2023, Harvard University)
             <br>
@@ -234,18 +258,17 @@
           </li>
 
         
-
+          <br>
           <li>
             Quantitative Research Methods (by Taylor Boas, Fall 2019, Boston University)
           </li>
         
-            <br>
             <div style="text-align: center;">
             <button onclick="toggleAbstract('abstract3')">Show Details</button>
           </div>
 
             <div id="abstract3" style="display:none; margin-top:10px;">
-              <p>
+        <p>
                 In this course, I played role in helping students understand and apply quantitative research methods, which are essential tools for political scientists and social scientists to test empirical claims about the world. I guided students through the foundational concepts of probability, descriptive statistics, hypothesis testing, and regression analysis, which form the basis of nearly all quantitative analysis in the social sciences. My teaching emphasized both the theoretical aspects, such as the concepts, logic, and mathematics underlying statistics, and the practical applications, where we used software to analyze data and implement the techniques learned in class. Additionally, I was responsible for teaching R to graduate students, ensuring they developed the skills needed to perform sophisticated data analysis. I also focused on helping students critically assess the quantitative work done by other scholars, equipping them with the ability to evaluate research rigorously.
 
             </div>
@@ -255,17 +278,17 @@
         
 
         
-        <hr>
+      <hr>
         <p><small>
         </small></p>
-      </section>
-    </div>
+    </section>
+  </div>
 
-    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+  <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
 
-    <script src="javascripts/scale.fix.js"></script>
+  <script src="javascripts/scale.fix.js"></script>
 
-    <script>
+  <script>
       function toggleAbstract(id) {
         var abstractDiv = document.getElementById(id);
         if (abstractDiv.style.display === 'none') {
@@ -275,20 +298,241 @@
         }
       }
 
-      function toggleMenu() {
-    var nav = document.querySelector('.topnav');
-    var toggleButton = document.querySelector('.menu-toggle');
-    
-    if (nav.style.display === 'flex') {
-        nav.style.display = 'none';
-        toggleButton.classList.remove('open');
-        toggleButton.innerHTML = '&#9776;'; // Hamburger icon
-    } else {
-        nav.style.display = 'flex';
-        toggleButton.classList.add('open');
-        toggleButton.innerHTML = ''; // Remove inner content since the ::before will handle it
+    function toggleMenu() {
+      var nav = document.querySelector('.topnav');
+      var toggleButton = document.querySelector('.menu-toggle');
+      
+      if (nav.style.display === 'flex') {
+          nav.style.display = 'none';
+          toggleButton.classList.remove('open');
+          toggleButton.innerHTML = '&#9776;'; // Hamburger icon
+      } else {
+          nav.style.display = 'flex';
+          toggleButton.classList.add('open');
+          toggleButton.innerHTML = ''; // Remove inner content since the ::before will handle it
+      }
     }
-}
-    </script>
-  </body>
+    
+    // Initialize Particle.js for the left and right containers
+    particlesJS("particles-left", {
+      "particles": {
+        "number": {
+          "value": 50,
+          "density": {
+            "enable": true,
+            "value_area": 300
+          }
+        },
+        "color": {
+          "value": "#ad1445"  // Dark gray particles
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          },
+          "image": {
+            "src": "img/github.svg",
+            "width": 100,
+            "height": 100
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ad1445",  // Dark gray lines
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 6,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "repulse"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 400,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
+    });
+
+    particlesJS("particles-right", {
+      "particles": {
+        "number": {
+          "value": 50,
+          "density": {
+            "enable": true,
+            "value_area": 300
+          }
+        },
+        "color": {
+          "value": "#ad1445"  // Dark gray particles
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          },
+          "image": {
+            "src": "img/github.svg",
+            "width": 100,
+            "height": 100
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 3,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ad1445",  // Dark gray lines
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 6,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "repulse"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 400,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+</body>
 </html>
