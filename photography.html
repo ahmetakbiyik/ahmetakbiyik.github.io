@@ -1,10 +1,10 @@
 <!doctype html>
 <html>
-  <head>
+<head>
     <script type="text/javascript">
-      var host = "ahmetakbiyik.com";
-      if ((host == window.location.host) && (window.location.protocol != "https:"))
-        window.location.protocol = "https";
+        var host = "ahmetakbiyik.com";
+        if ((host == window.location.host) && (window.location.protocol != "https:"))
+            window.location.protocol = "https";
     </script>
     <meta charset="utf-8">
     <link rel="canonical" href="ahmetakbiyik.com"/>
@@ -26,222 +26,263 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap">
 
     <style>
-      body {
-        font-family: 'Poppins', sans-serif;
-        background: whitesmoke;
-        color: #333;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-      }
-      h1, h2, p, a {
-        transition: color 0.3s ease, transform 0.3s ease;
-      }
-      h1 a, p a {
-        text-decoration: none;
-        color: #333;
-      }
-      h1 a:hover, p a:hover {
-        color: #ad1445;
-        transform: scale(1.05);
-      }
-      header img {
-        border-radius: 50%;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        transition: transform 0.3s ease;
-      }
-      header img:hover {
-        transform: scale(1.1);
-      }
-      .topnav {
-        display: flex;
-        justify-content: center;
-        gap: 0px;
-      }
-      .topnav a {
-        padding: 14px 15px;
-        display: inline-block;
-        color: #fff;
-        background-color: #ad1445;
-        text-decoration: none;
-        margin: 0 10px;
-        border-radius: 5px;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-      }
-      .topnav a:hover {
-        background-color: #ad1445;
-        transform: scale(1.1);
-      }
-      button {
-        padding: 8px 15px;
-        margin-top: 10px;
-        border: none;
-        background-color: #ad1445;
-        color: #fff;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-      }
-      button:hover {
-        background-color: #ad1445;
-        transform: scale(1.05);
-      }
-      .wrapper {
-        padding: 20px;
-      }
-      hr {
-        border: none;
-        height: 2px;
-        background-color: #ad1445;
-      }
-    
-      /* Add a media query for smaller screens */
-      @media (max-width: 768px) {
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: whitesmoke;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        h1, h2, p, a {
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        h1 a, p a {
+            text-decoration: none;
+            color: #333;
+        }
+        h1 a:hover, p a:hover {
+            color: #ad1445;
+            transform: scale(1.05);
+        }
+        header img {
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        header img:hover {
+            transform: scale(1.1);
+        }
         .topnav {
-          display: none;
-          flex-direction: column;
-          align-items: center;
-          position: fixed;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          background-color: #ad1445;
-          padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            gap: 0px;
         }
         .topnav a {
-          margin: 5px 0;
-          width: 100%;
-          text-align: center;
+            padding: 14px 10px;
+            display: inline-block;
+            color: #fff;
+            background-color: #ad1445;
+            text-decoration: none;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
-        .menu-toggle {
-          display: block;
-          position: fixed;
-          bottom: 10px;
-          right: 10px;
-          background-color: #ad1445;
-          color: white;
-          padding: 10px;
-          border-radius: 50%;
-          font-size: 24px;
-          cursor: pointer;
+        .topnav a:hover {
+            background-color: #ad1445;
+            transform: scale(1.1);
         }
-      }
+        button {
+            padding: 8px 15px;
+            margin-top: 10px;
+            border: none;
+            background-color: #ad1445;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        button:hover {
+            background-color: #ad1445;
+            transform: scale(1.05);
+        }
+        .wrapper {
+            padding: 20px;
+        }
+        hr {
+            border: none;
+            height: 2px;
+            background-color: #ad1445;
+        }
 
-      /* Hide the menu toggle on larger screens */
-      @media (min-width: 769px) {
-        .menu-toggle {
-          display: none;
+        /* Lightbox styles */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
         }
-      }
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 80%;
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        .caption {
+            color: white;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        /* Gallery styles */
+        .photo-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: space-between;
+        }
+        .photo-gallery img {
+            width: calc(50% - 10px);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .photo-gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        /* Add a media query for smaller screens */
+        @media (max-width: 768px) {
+            .topnav {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: #ad1445;
+                padding: 10px 0;
+            }
+            .topnav a {
+                margin: 5px 0;
+                width: 100%;
+                text-align: center;
+            }
+            .menu-toggle {
+                display: block;
+                position: fixed;
+                bottom: 10px;
+                right: 10px;
+                background-color: #ad1445;
+                color: white;
+                padding: 10px;
+                border-radius: 50%;
+                font-size: 24px;
+                cursor: pointer;
+            }
+            .photo-gallery img {
+                width: calc(100% - 10px);
+            }
+        }
+
+        /* Hide the menu toggle on larger screens */
+        @media (min-width: 769px) {
+            .menu-toggle {
+                display: none;
+            }
+        }
     </style>
-    
+</head>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160580606-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-160580606-1');
-    </script>
-  </head>
-
-  <body>
-    <div class="wrapper">
-      <header>
+<body>
+<div class="wrapper">
+    <header>
         <h1 style="text-align: center;"><a href="/">Ahmet Akbiyik</a></h1>
         <div style="text-align: center;">
-          <br>
-          <img src="img/profile2.png" style="width:210.9px;height:335.4px;" alt = "profile picture">
+            <br>
+            <img src="img/profile2.png" style="width:210.9px;height:335.4px;" alt="profile picture">
         </div>
         <br>
-          <p>
+        <p>
             Ph.D. candidate <a href="mailto:ahmetakbiyik@g.harvard.edu"><i class="far fa-envelope"></i></a>
             <br>
             Political Economy and Government
             <br>
             Harvard Kennedy School
-          </p>
-        <hr>
-        <p>
-          <a href="https://www.github.com/ahmetakbiyik" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/ahmet-utku-akbiyik/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://www.orcid.org/0000-0002-0775-7220" target="_blank"><i class="fab fa-orcid"></i></a>
-          <a href="https://www.twitter.com/ahmetakbiyik_en" target="_blank"> <i class="fab fa-twitter"></i></a>
         </p>
         <hr>
         <p>
-          <a href="https://www.instagram.com/akbiyik.photography/" target="_blank"><i class="fab fa-instagram"></i></a> 
-          <a href="https://www.instagram.com/akbiyik.photography/" target="_blank"> aerial photography</a>
+            <a href="https://www.github.com/ahmetakbiyik" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/ahmet-utku-akbiyik/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.orcid.org/0000-0002-0775-7220" target="_blank"><i class="fab fa-orcid"></i></a>
+            <a href="https://www.twitter.com/ahmetakbiyik_en" target="_blank"> <i class="fab fa-twitter"></i></a>
         </p>
-      </header>
-      <section>
-          <div class="topnav">
+        <hr>
+        <p>
+            <a href="https://www.instagram.com/akbiyik.photography/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/akbiyik.photography/" target="_blank"> aerial photography</a>
+        </p>
+    </header>
+    <section>
+        <div class="topnav">
             <a class="ai ai-2x" href="about.html">About</a>
             <a class="ai ai-2x" href="research.html">Research</a>
-            <a class="ai ai-2x" href="teaching.html" >Teaching</a>
-            <a class="ai ai-2x" href="photography.html" >Photography</a>
+            <a class="ai ai-2x" href="teaching.html">Teaching</a>
+            <a class="ai ai-2x" href="photography.html">Photography</a>
             <a class="ai ai-2x" href="vita.html">CV</a>
-          </div>
+        </div>
         <br>
-        
+
         <h2>Aerial Photography</h2>
 
-        <p>    I have always been fascinated by the world from above, and drone photography allows me to capture stunning aerial perspectives that are often hidden from the naked eye. Whether it's the intricate patterns of urban landscapes, the vastness of natural scenery, or the play of light and shadow across different terrains, drone photography offers a unique way to tell stories and see the world differently. Here are some examples of my work that showcase my passion for aerial photography.
-
-          </p>
+        <p>I have always been fascinated by the world from above, and drone photography allows me to capture stunning aerial perspectives that are often hidden from the naked eye. Whether it's the intricate patterns of urban landscapes, the vastness of natural scenery, or the play of light and shadow across different terrains, drone photography offers a unique way to tell stories and see the world differently. Here are some examples of my work that showcase my passion for aerial photography.
+        </p>
         <div class="photo-gallery">
-          <img src="public/DJI_0259.JPG" alt="Frozen lake, Waltham, Ma, Winter 2020" onclick="openLightbox(this.src, this.alt)">
-          <img src="public/DJI_0299.JPG" alt="Blitzgerd, Waltham, Ma, Winter 2020" onclick="openLightbox(this.src, this.alt)">
-          <img src="public/DJI_0568.JPG" alt="Lincoln, Watertown, NH, Fall 2022" onclick="openLightbox(this.src, this.alt)">
-          <img src="public/DJI_0312.JPG" alt="Rivers, Salibury, Ma, Summer 2022" onclick="openLightbox(this.src, this.alt)">
-          <img src="public/DJI_0855.JPG" alt="Rivers, Salibury, Ma, Summer 2022" onclick="openLightbox(this.src, this.alt)">
-          <img src="public/DJI_0747.JPG" alt="Shore, Fethiye, Turkey, Summer 2023" onclick="openLightbox(this.src, this.alt)">
+            <img src="public/DJI_0259.JPG" alt="Frozen lake, Waltham, Ma, Winter 2020" onclick="openLightbox(this.src, this.alt)">
+            <img src="public/DJI_0299.JPG" alt="Blitzgerd, Waltham, Ma, Winter 2020" onclick="openLightbox(this.src, this.alt)">
+            <img src="public/DJI_0568.JPG" alt="Lincoln, Watertown, NH, Fall 2022" onclick="openLightbox(this.src, this.alt)">
+            <img src="public/DJI_0312.JPG" alt="Rivers, Salibury, Ma, Summer 2022" onclick="openLightbox(this.src, this.alt)">
+            <img src="public/DJI_0855.JPG" alt="Rivers, Salibury, Ma, Summer 2022" onclick="openLightbox(this.src, this.alt)">
+            <img src="public/DJI_0747.JPG" alt="Shore, Fethiye, Turkey, Summer 2023" onclick="openLightbox(this.src, this.alt)">
         </div>
 
         <!-- Lightbox container -->
         <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-          <span class="close">&times;</span>
-          <img id="lightbox-img" class="lightbox-content">
-          <div id="caption" class="caption"></div>
+            <span class="close">&times;</span>
+            <img id="lightbox-img" class="lightbox-content">
+            <div id="caption" class="caption"></div>
         </div>
 
         <hr>
         <p><small></small></p>
-      </section>
-    </div>
+    </section>
+</div>
 
-    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+<div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
 
-    <script src="javascripts/scale.fix.js"></script>
+<script src="javascripts/scale.fix.js"></script>
 
-    <script>
-      function toggleAbstract(id) {
+<script>
+    function toggleAbstract(id) {
         var abstractDiv = document.getElementById(id);
         if (abstractDiv.style.display === 'none') {
-          abstractDiv.style.display = 'block';
+            abstractDiv.style.display = 'block';
         } else {
-          abstractDiv.style.display = 'none';
+            abstractDiv.style.display = 'none';
         }
-      }
+    }
 
-      function openLightbox(src, alt) {
+    function openLightbox(src, alt) {
         document.getElementById("lightbox").style.display = "flex";
         document.getElementById("lightbox-img").src = src;
         document.getElementById("caption").innerText = alt;
-      }
+    }
 
-      function closeLightbox() {
+    function closeLightbox() {
         document.getElementById("lightbox").style.display = "none";
-      }
+    }
 
-      function toggleMenu() {
+    function toggleMenu() {
         var nav = document.querySelector('.topnav');
         if (nav.style.display === 'flex') {
-          nav.style.display = 'none';
+            nav.style.display = 'none';
         } else {
-          nav.style.display = 'flex';
+            nav.style.display = 'flex';
         }
-      }
-    </script>
-  </body>
+    }
+</script>
+</body>
 </html>
