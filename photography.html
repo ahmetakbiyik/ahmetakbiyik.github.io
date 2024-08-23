@@ -127,22 +127,40 @@
         }
 
         /* Gallery styles */
-        .photo-gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: space-between;
-        }
-        .photo-gallery img {
-            width: calc(50% - 10px);
-            cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .photo-gallery img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-        }
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
 
+.photo-item {
+    width: calc(50% - 10px);
+    text-align: center;
+}
+
+.photo-item img {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.photo-item p {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .photo-item {
+        width: 100%;
+    }
+}
         /* Add a media query for smaller screens */
         @media (max-width: 768px) {
             .topnav {
@@ -164,7 +182,7 @@
             .menu-toggle {
                 display: block;
                 position: fixed;
-                bottom: 10px;
+                top: 10px;
                 right: 10px;
                 background-color: #ad1445;
                 color: white;
@@ -176,6 +194,10 @@
             .photo-gallery img {
                 width: calc(100% - 10px);
             }
+            header img {
+          width: 150px; /* Adjust the width for mobile */
+          height: auto; /* Maintain aspect ratio */
+        }
         }
 
         /* Hide the menu toggle on larger screens */
@@ -193,8 +215,8 @@
         <h1 style="text-align: center;"><a href="/">Ahmet Akbiyik</a></h1>
         <div style="text-align: center;">
             <br>
-            <img src="img/profile2.png" style="width:210.9px;height:335.4px;" alt="profile picture">
-        </div>
+            <img src="img/profile2.png" style="width:200px;height:200px;" alt = "profile picture">
+                </div>
         <br>
         <p>
             Ph.D. candidate <a href="mailto:ahmetakbiyik@g.harvard.edu"><i class="far fa-envelope"></i></a>
@@ -211,10 +233,6 @@
             <a href="https://www.twitter.com/ahmetakbiyik_en" target="_blank"> <i class="fab fa-twitter"></i></a>
         </p>
         <hr>
-        <p>
-            <a href="https://www.instagram.com/akbiyik.photography/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.instagram.com/akbiyik.photography/" target="_blank"> aerial photography</a>
-        </p>
     </header>
     <section>
         <div class="topnav">
@@ -231,13 +249,32 @@
         <p>I have always been fascinated by the world from above, and drone photography allows me to capture stunning aerial perspectives that are often hidden from the naked eye. Whether it's the intricate patterns of urban landscapes, the vastness of natural scenery, or the play of light and shadow across different terrains, drone photography offers a unique way to tell stories and see the world differently. Here are some examples of my work that showcase my passion for aerial photography.
         </p>
         <div class="photo-gallery">
-            <img src="public/DJI_0259.JPG" alt="Frozen lake, Waltham, Ma, Winter 2020" onclick="openLightbox(this.src, this.alt)">
-            <img src="public/DJI_0299.JPG" alt="Blitzgerd, Waltham, Ma, Winter 2020" onclick="openLightbox(this.src, this.alt)">
-            <img src="public/DJI_0568.JPG" alt="Lincoln, Watertown, NH, Fall 2022" onclick="openLightbox(this.src, this.alt)">
-            <img src="public/DJI_0312.JPG" alt="Rivers, Salibury, Ma, Summer 2022" onclick="openLightbox(this.src, this.alt)">
-            <img src="public/DJI_0855.JPG" alt="Rivers, Salibury, Ma, Summer 2022" onclick="openLightbox(this.src, this.alt)">
-            <img src="public/DJI_0747.JPG" alt="Shore, Fethiye, Turkey, Summer 2023" onclick="openLightbox(this.src, this.alt)">
+            <div class="photo-item">
+                <img src="public/DJI_0259.JPG" alt="Frozen lake, Waltham, Ma, Winter 2020" onclick="openLightbox(this.src)">
+                <p>Frozen lake, Waltham, Ma, Winter 2020</p>
+            </div>
+            <div class="photo-item">
+                <img src="public/DJI_0299.JPG" alt="Blitzgerd, Waltham, Ma, Winter 2020" onclick="openLightbox(this.src, this.alt)">
+                <p>Blitzgerd, Waltham, Ma, Winter 2020</p>
+            </div>
+            <div class="photo-item">
+                <img src="public/DJI_0568.JPG" alt="Lincoln, Watertown, NH, Fall 2022" onclick="openLightbox(this.src)">
+                <p>Lincoln, Watertown, NH, Fall 2022</p>
+            </div>
+            <div class="photo-item">
+                <img src="public/DJI_0312.JPG" alt="Rivers, Salibury, Ma, Summer 2022" onclick="openLightbox(this.src, this.alt)">
+                <p>Rivers, Salibury, Ma, Summer 2022</p>
+            </div>
+            <div class="photo-item">
+                <img src="public/DJI_0855.JPG" alt="Rivers, Salibury, Ma, Summer 2022" onclick="openLightbox(this.src, this.alt)">
+                <p>Rivers, Salibury, Ma, Summer 2022</p>
+            </div>
+            <div class="photo-item">
+                <img src="public/DJI_0747.JPG" alt="Shore, Fethiye, Turkey, Summer 2023" onclick="openLightbox(this.src, this.alt)">
+                <p>Shore, Fethiye, Turkey, Summer 2023</p>
+            </div>
         </div>
+        
 
         <!-- Lightbox container -->
         <div id="lightbox" class="lightbox" onclick="closeLightbox()">
@@ -268,7 +305,6 @@
     function openLightbox(src, alt) {
         document.getElementById("lightbox").style.display = "flex";
         document.getElementById("lightbox-img").src = src;
-        document.getElementById("caption").innerText = alt;
     }
 
     function closeLightbox() {
