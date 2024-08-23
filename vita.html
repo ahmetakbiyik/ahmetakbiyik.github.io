@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
   <head>
@@ -54,6 +53,11 @@
       header img:hover {
         transform: scale(1.1);
       }
+      .topnav {
+        display: flex;
+        justify-content: center;
+        gap: 0px;
+      }
       .topnav a {
         padding: 14px 15px;
         display: inline-block;
@@ -69,7 +73,7 @@
         transform: scale(1.1);
       }
       button {
-        padding: 8px 16px;
+        padding: 8px 15px;
         margin-top: 10px;
         border: none;
         background-color: #ad1445;
@@ -90,7 +94,47 @@
         height: 2px;
         background-color: #ad1445;
       }
+
+      /* Add a media query for smaller screens */
+      @media (max-width: 768px) {
+        .topnav {
+          display: none;
+          flex-direction: column;
+          align-items: center;
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background-color: #ad1445;
+          padding: 10px 0;
+        }
+        .topnav a {
+          margin: 5px 0;
+          width: 100%;
+          text-align: center;
+        }
+        .menu-toggle {
+          display: block;
+          position: fixed;
+          bottom: 10px;
+          right: 10px;
+          background-color: #ad1445;
+          color: white;
+          padding: 10px;
+          border-radius: 50%;
+          font-size: 24px;
+          cursor: pointer;
+        }
+      }
+
+      /* Hide the menu toggle on larger screens */
+      @media (min-width: 769px) {
+        .menu-toggle {
+          display: none;
+        }
+      }
     </style>
+    
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160580606-1"></script>
     <script>
@@ -131,7 +175,7 @@
         </p>
       </header>
       <section>
-          <div class="topnav"  style="display: flex; justify-content: center; gap: 0px;">
+          <div class="topnav">
             <a class="ai ai-2x" href="about.html">About</a>
             <a class="ai ai-2x" href="research.html">Research</a>
             <a class="ai ai-2x" href="teaching.html" >Teaching</a>
@@ -157,6 +201,8 @@
         </small></p>
       </section>
     </div>
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+
     <script src="javascripts/scale.fix.js"></script>
 
     <script>
@@ -166,6 +212,15 @@
           abstractDiv.style.display = 'block';
         } else {
           abstractDiv.style.display = 'none';
+        }
+      }
+
+      function toggleMenu() {
+        var nav = document.querySelector('.topnav');
+        if (nav.style.display === 'flex') {
+          nav.style.display = 'none';
+        } else {
+          nav.style.display = 'flex';
         }
       }
     </script>

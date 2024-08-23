@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
   <head>
@@ -26,71 +25,115 @@
     <meta name="description" content="Ahmet Akbiyik is a Ph.D. candidate at Harvard Kennedy School">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap">
 
-    <style>
-      body {
-        font-family: 'Poppins', sans-serif;
-        background: whitesmoke;
-        color: #333;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-      }
-      h1, h2, p, a {
-        transition: color 0.3s ease, transform 0.3s ease;
-      }
-      h1 a, p a {
-        text-decoration: none;
-        color: #333;
-      }
-      h1 a:hover, p a:hover {
-        color: #ad1445;
-        transform: scale(1.05);
-      }
-      header img {
-        border-radius: 50%;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        transition: transform 0.3s ease;
-      }
-      header img:hover {
-        transform: scale(1.1);
-      }
-      .topnav a {
-        padding: 14px 15px;
-        display: inline-block;
-        color: #fff;
-        background-color: #ad1445;
-        text-decoration: none;
-        margin: 0 10px;
-        border-radius: 5px;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-      }
-      .topnav a:hover {
-        background-color: #ad1445;
-        transform: scale(1.1);
-      }
-      button {
-        padding: 8px 15px;
-        margin-top: 10px;
-        border: none;
-        background-color: #ad1445;
-        color: #fff;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-      }
-      button:hover {
-        background-color: #ad1445;
-        transform: scale(1.05);
-      }
-      .wrapper {
-        padding: 20px;
-      }
-      hr {
-        border: none;
-        height: 2px;
-        background-color: #ad1445;
-      }
-    </style>
+   <style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: whitesmoke;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  h1, h2, p, a {
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  h1 a, p a {
+    text-decoration: none;
+    color: #333;
+  }
+  h1 a:hover, p a:hover {
+    color: #ad1445;
+    transform: scale(1.05);
+  }
+  header img {
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+  header img:hover {
+    transform: scale(1.1);
+  }
+  .topnav {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+  }
+  .topnav a {
+    padding: 14px 15px;
+    display: inline-block;
+    color: #fff;
+    background-color: #ad1445;
+    text-decoration: none;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .topnav a:hover {
+    background-color: #ad1445;
+    transform: scale(1.1);
+  }
+  button {
+    padding: 8px 15px;
+    margin-top: 10px;
+    border: none;
+    background-color: #ad1445;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  button:hover {
+    background-color: #ad1445;
+    transform: scale(1.05);
+  }
+  .wrapper {
+    padding: 20px;
+  }
+  hr {
+    border: none;
+    height: 2px;
+    background-color: #ad1445;
+  }
+
+  /* Add a media query for smaller screens */
+  @media (max-width: 768px) {
+    .topnav {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ad1445;
+      padding: 10px 0;
+    }
+    .topnav a {
+      margin: 5px 0;
+      width: 100%;
+      text-align: center;
+    }
+    .menu-toggle {
+      display: block;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      background-color: #ad1445;
+      color: white;
+      padding: 10px;
+      border-radius: 50%;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
+
+  /* Hide the menu toggle on larger screens */
+  @media (min-width: 769px) {
+    .menu-toggle {
+      display: none;
+    }
+  }
+</style>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160580606-1"></script>
     <script>
@@ -131,7 +174,7 @@
         </p>
       </header>
       <section>
-          <div class="topnav"  style="display: flex; justify-content: center; gap: 0px;">
+          <div class="topnav">
             <a class="ai ai-2x" href="about.html">About</a>
             <a class="ai ai-2x" href="research.html">Research</a>
             <a class="ai ai-2x" href="teaching.html" >Teaching</a>
@@ -144,33 +187,29 @@
         </p>
         <p>
           My research involves studying disinformation and intergroup relations across various digital platforms, such as Facebook, X, WhatsApp, and Telegram. I conduct survey studies and collaborate with great colleagues on other surveys in diverse regions, including Sweden, Turkey, and Lebanon, focusing on the impact of disinformation on individuals and intergroup relations.
-
-
         </p>
         <p>
           Prior to embarking on my graduate studies, I earned my B.A. in Political Science and Economics at Bogazici University in Istanbul.
         </p>  
         
-        
-
         <h2>Contact</h2>
         <p>
           I can be reached at my email: <a href="mailto:ahmetakbiyik@g.harvard.edu">ahmetakbiyik@g.harvard.edu</a>.
         </p>
         <hr>
-        <p><small>
-        </small></p>
+        <p><small></small></p>
       </section>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
 
+    <script src="javascripts/scale.fix.js"></script>
     <script>
-      function toggleAbstract(id) {
-        var abstractDiv = document.getElementById(id);
-        if (abstractDiv.style.display === 'none') {
-          abstractDiv.style.display = 'block';
+      function toggleMenu() {
+        var nav = document.querySelector('.topnav');
+        if (nav.style.display === 'flex') {
+          nav.style.display = 'none';
         } else {
-          abstractDiv.style.display = 'none';
+          nav.style.display = 'flex';
         }
       }
     </script>
