@@ -261,8 +261,24 @@ footer {
     color:#444;
   }
 }
-
+.fa {
+  color: #000000;
+  font-size: 2em!important;
+  padding-right: 10px!important;
+}
 .fab {
+  color: #000000;
+  font-size: 2em!important;
+  padding-right: 10px!important;
+}
+
+.fabai {
+  color: #000000;
+  font-size: 2em!important;
+  padding-right: 10px!important;
+}
+
+.ia {
   color: #000000;
   font-size: 2em!important;
   padding-right: 10px!important;
