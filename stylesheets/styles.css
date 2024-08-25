@@ -40,7 +40,7 @@ h3, h4, h5, h6 {
 }
 
 a, a:link, a:focus, a:hover, a:active, a:visited {
-  color: #A51C30;
+  color: #AD1445;
   text-decoration-line: none;
 }
 
@@ -276,9 +276,9 @@ footer {
 }
 
 mark_harvard {
-  background-color: #A51C30!important;
+  background-color: #AD1445!important;
   color: white!important;
-  box-shadow: 0 0 0 0.5px #A51C30!important;
+  box-shadow: 0 0 0 0.5px #AD1445!important;
 }
 
 mark_gold {
