@@ -212,6 +212,14 @@
         <p>
           Prior to embarking on my graduate studies, I earned my B.A. in Political Science and Economics at Bogazici University in Istanbul and my M.A. in Political Science at Boston University.
         </p>  
+        <div style="text-align: center;"> 
+            <button onclick="toggleAbstract('abstract2')">Explore My Dissertation Study</button>
+          </div>
+            <div id="abstract2" style="display:none; margin-top:10px;">
+              <p>
+                Attitudes toward an outgroup (such as refugees), even when not rooted in empirical evidence, can be difficult to alter, and correcting misperceptions often has limited impact. In my dissertation, I am conducting a randomized controlled trial (RCT) to explore strategies for changing these resistant attitudes. My study involves bringing together individuals from diverse backgrounds into WhatsApp groups, where they engage in non-political interactions. After these interactions, I introduce fact-checked information about their outgroup to see if this prior engagement makes participants more open to accepting the information. By lowering barriers created by prior beliefs through non-political interaction, fact-checked information may have a more significant impact on attitudes toward the outgroup.
+              </p>
+            </div>
         
         <h2>Contact</h2>
         <p>
@@ -225,6 +233,33 @@
 
   <script src="javascripts/scale.fix.js"></script>
   <script>
+    function toggleMenu() {
+      var nav = document.querySelector('.topnav');
+      var toggleButton = document.querySelector('.menu-toggle');
+      
+      if (nav.style.display === 'flex') {
+          nav.style.display = 'none';
+          toggleButton.classList.remove('open');
+          toggleButton.innerHTML = '&#9776;'; // Hamburger icon
+      } else {
+          nav.style.display = 'flex';
+          toggleButton.classList.add('open');
+          toggleButton.innerHTML = ''; // Remove inner content since the ::before will handle it
+      }
+    }
+    
+    
+  </script>
+  <script>
+    function toggleAbstract(id) {
+      var abstractDiv = document.getElementById(id);
+      if (abstractDiv.style.display === 'none') {
+        abstractDiv.style.display = 'block';
+      } else {
+        abstractDiv.style.display = 'none';
+      }
+    }
+
     function toggleMenu() {
       var nav = document.querySelector('.topnav');
       var toggleButton = document.querySelector('.menu-toggle');
