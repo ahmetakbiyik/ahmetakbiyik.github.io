@@ -431,7 +431,7 @@ button:hover {
   transform: scale(1.05);
 }
 
-#abstract, #abstract2, #abstract3, #abstract4 {
+#abstract, #abstract1, #abstract2, #abstract3, #abstract4 {
   font-family: 'Montserrat', sans-serif;  /* Ensure font consistency */
   font-size: 12px;  /* Adjust font size if necessary */
   margin-top: 3px;
