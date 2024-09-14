@@ -189,11 +189,12 @@
       <p style="text-align: center;">
         <a href="https://www.github.com/ahmetakbiyik" target="_blank"><i class="fab fa-github"></i></a>
         <a href="https://www.linkedin.com/in/ahmet-akbiyik/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        
         <a href="https://scholar.google.com/citations?user=FDbIYVgAAAAJ&hl=en&oi=ao" target="_blank"><i class="ai ai-google-scholar fab"></i></a>
         <a href="photography.html" ><i class="fas fa-camera"></i></a>
-
       </p>
       <hr>
+      
     </header>
     <section>
       <div class="topnav">
@@ -204,65 +205,82 @@
         <a class="ai ai-2x" href="vita.html">CV</a>
       </div>
       <br>
-        <p>
-          I am a Ph.D. candidate in Political Economy and Government at Harvard Kennedy School, with my research primarily centered on migration, social cohesion, and the role of social media in shaping intergroup relations. My work is supported by affiliations with The Weatherhead Center for International Affairs and The Institute for Quantitative Social Science (IQSS) and has received grants from J-PAL at MIT and The Stone Program at Harvard.
-        </p>
-        <p>
-          My research involves studying disinformation and intergroup relations across various digital platforms, such as Facebook, X, WhatsApp, and Telegram. I conduct survey studies and collaborate with great colleagues on other surveys in diverse regions, including Sweden, Turkey, and Lebanon, focusing on the impact of disinformation on individuals and intergroup relations.
-        </p>
-        <p>
-          Prior to embarking on my graduate studies, I earned my B.A. in Political Science and Economics at Bogazici University in Istanbul and my M.A. in Political Science at Boston University.
-        </p>  
-        <div style="text-align: center;"> 
-            <button onclick="toggleAbstract('abstract2')">Explore My Dissertation Study</button>
+        
+        <h2>Consulting</h2>
+        <ul>
+          <li>
+            Survey Consultant, Internews, UK, 2021-2023
+            <br>
+            <div style="text-align: center;">
+            <button onclick="toggleAbstract('abstract')">Show Details</button>
           </div>
+
+            <div id="abstract" style="display:none; margin-top:10px;">
+              <p>
+                Designed and conducted comprehensive audience surveys for various media outlets to refine content strategies and boost audience engagement. Developed tailored survey methodologies to capture nuanced audience insights, improving media outlet responsiveness to community needs and enhancing overall communication strategies. Collaborated with cross-functional teams to analyze survey data, providing actionable recommendations for media content development and distribution. presented survey findings and insights to stakeholders, effectively communicating results to inform strategic decision-making and optimize content offerings.
+
+              </div>
+          </li>
+          <br>
+          
+
+          <li>
+            Survey Consultant, Galata Survey, Turkey, 2022-2023
+            <br>
+            <div style="text-align: center;">
+            <button onclick="toggleAbstract('abstract1')">Show Details</button>
+          </div>
+
+            <div id="abstract1" style="display:none; margin-top:10px;">
+              <p>
+                Provided expert consultation to elevate survey methodologies through the integration of innovative survey techniques, experimental design, and randomization strategies. Assisted in the development of customized surveys that increased data reliability and validity, enabling more accurate audience segmentation and targeted engagement strategies. Led workshops and training sessions to enhance internal capabilities in advanced survey design and implementation.
+
+              </div>
+          </li>
+          <br>
+          <li>
+            Research Coordinator, 23 Talent Association, Turkey, 2022-2023
+            <br>
+            <div style="text-align: center;">
+            <button onclick="toggleAbstract('abstract2')">Show Details</button>
+          </div>
+
             <div id="abstract2" style="display:none; margin-top:10px;">
               <p>
-                Attitudes toward an outgroup (such as refugees), even when not rooted in empirical evidence, can be difficult to alter, and correcting misperceptions often has limited impact. In my dissertation, I am conducting a randomized controlled trial (RCT) to explore strategies for changing these resistant attitudes. My study involves bringing together individuals from diverse backgrounds into WhatsApp groups, where they engage in non-political interactions. After these interactions, I introduce fact-checked information about their outgroup to see if this prior engagement makes participants more open to accepting the information. By lowering barriers created by prior beliefs through non-political interaction, fact-checked information may have a more significant impact on attitudes toward the outgroup.
-              </p>
-              <p>
-                <a href="https://www.dropbox.com/scl/fi/xnhuf4vot06mtpesr7587/Akbiyik_research_design_APSA2024.pdf?rlkey=lt222wrc5gls85xxtv52unwvt&dl=0">Link for my dissertation research design</a>
-                </p>
+                Led the design and implementation of research surveys to better understand youth perspectives and behavior, contributing to more effective organizational strategies and program development. Developed innovative survey tools and methodologies to capture diverse youth voices, guiding strategic decision-making and policy recommendations. Managed cross-functional teams, analyzed data to identify trends, and provided insights that shaped initiatives fostering youth leadership and engagement.
+
+
             </div>
+          </li>
+
         
-        <h2>Contact</h2>
-        <p>
-          I can be reached at my email: <a href="mailto:ahmetakbiyik@g.harvard.edu">ahmetakbiyik@g.harvard.edu</a>.
-          </p>
+        </ul>
+        
+        
+
+        
       <hr>
-        <p><small></small></p>
+   <p style="text-align: right;">
+  <small>
+    <a href="mailto:ahmetakbiyik@g.harvard.edu">ahmetakbiyik@g.harvard.edu</a>
+  </small>
+</p>
     </section>
   </div>
+
   <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
 
   <script src="javascripts/scale.fix.js"></script>
+
   <script>
-    function toggleMenu() {
-      var nav = document.querySelector('.topnav');
-      var toggleButton = document.querySelector('.menu-toggle');
-      
-      if (nav.style.display === 'flex') {
-          nav.style.display = 'none';
-          toggleButton.classList.remove('open');
-          toggleButton.innerHTML = '&#9776;'; // Hamburger icon
-      } else {
-          nav.style.display = 'flex';
-          toggleButton.classList.add('open');
-          toggleButton.innerHTML = ''; // Remove inner content since the ::before will handle it
+      function toggleAbstract(id) {
+        var abstractDiv = document.getElementById(id);
+        if (abstractDiv.style.display === 'none') {
+          abstractDiv.style.display = 'block';
+        } else {
+          abstractDiv.style.display = 'none';
+        }
       }
-    }
-    
-    
-  </script>
-  <script>
-    function toggleAbstract(id) {
-      var abstractDiv = document.getElementById(id);
-      if (abstractDiv.style.display === 'none') {
-        abstractDiv.style.display = 'block';
-      } else {
-        abstractDiv.style.display = 'none';
-      }
-    }
 
     function toggleMenu() {
       var nav = document.querySelector('.topnav');
