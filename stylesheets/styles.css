@@ -229,7 +229,7 @@ mark_old_lavender { background-color: #736372; }
   color: #fff;
   padding: 8px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1em;
 }
 
 .topnav a:hover, .topnav a.active {
