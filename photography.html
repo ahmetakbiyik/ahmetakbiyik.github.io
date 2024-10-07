@@ -35,7 +35,13 @@
       display: flex;
       justify-content: center;
     }
-      h1, h2, p, a {
+    h1 {
+      font-family: 'Montserrat';  /* Ensure font consistency */
+      display: flex;
+  justify-content: center; /* Centers horizontally */
+
+    }
+    h2, p, a {
       font-family: 'Montserrat';  /* Ensure font consistency */
       transition: color 0.3s ease, transform 0.3s ease;
       font-size: 1em;
@@ -52,7 +58,7 @@
       color: #ad1445;
       font-size: 1em;
     }
-    h1 a:hover, p a:hover {
+    p a:hover {
       color: #ad1445;
       
     }
@@ -246,7 +252,7 @@ transition: background-color 0.3s ease, transform 0.3s ease;
 <body>
   <div class="wrapper">
     <header>
-      <h1 style="text-align: center;"><a href="/">Ahmet Akbiyik</a></h1>
+      <h1 style="text-align: center;"><a href="index.html">Ahmet Akbiyik</a></h1>
       <div style="text-align: center;">
         <br>
         <img src="img/profile2.png" style="width:200px;height:200px;" alt="profile picture">
