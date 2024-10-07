@@ -252,7 +252,7 @@ button {
 
 button:hover {
   background-color: #AD1445;
-  transform: scale(1.05);
+  
 }
 
 #abstract, #abstract1, #abstract2, #abstract3, #abstract4 {

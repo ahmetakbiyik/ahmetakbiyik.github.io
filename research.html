@@ -27,7 +27,7 @@
 
 
   <style>
-  #abstract, #abstract1, #abstract2, #abstract3, #abstract4 {
+  #abstract, #abstract1, #abstract2, #abstract3, #abstract4,#abstract5 {
     font-family: 'Montserrat';  /* Ensure font consistency */
     font-size: 1em;
 
@@ -61,9 +61,15 @@
       color: #333;
       font-size: 1em;
     }
+    p a {
+      font-family: 'Montserrat';  /* Ensure font consistency */
+      text-decoration: none;
+      color: #ad1445;
+      font-size: 1em;
+    }
     h1 a:hover, p a:hover {
       color: #ad1445;
-      transform: scale(1.05);
+      
     }
     header img {
       border-radius: 50%;
@@ -92,10 +98,9 @@ transition: background-color 0.3s ease, transform 0.3s ease;
  /* Change this value to adjust the font size */    }
     .topnav a:hover {
       background-color: #ad1445;
-      transform: scale(1.1);
     }
     button {
-      padding: 8px 15px;
+      padding: 5px 15px;
       margin-top: 10px;
       border: none;
       background-color: #ad1445;
@@ -103,12 +108,12 @@ transition: background-color 0.3s ease, transform 0.3s ease;
       border-radius: 5px;
       cursor: pointer;
 transition: background-color 0.3s ease, transform 0.3s ease;
-      font-size: 1em;
+      font-size: 0.7em;
 
  /* Change this value to adjust the font size */    }
     button:hover {
       background-color: #ad1445;
-      transform: scale(1.05);
+      
     }
     .wrapper {
       padding: 20px;
@@ -249,6 +254,37 @@ transition: background-color 0.3s ease, transform 0.3s ease;
         <h2>Preprints</h2>
         <ul>
           
+          
+          <li> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4781005" target="_blank">Aiding Harmony: How International Aid Shapes Local Policy Preferences and Behavior toward Refugees</a>            
+            (with Melani Cammett)
+            <br>
+      <div style="text-align: center;">
+            <button onclick="toggleAbstract('abstract4')">Show Abstract</button>
+          </div>
+            <div id="abstract4" style="display:none; margin-top:10px;">
+              <p>
+                A key challenge for countries with large refugee populations is to establish policies that help refugees while ensuring that host country nationals do not resent them. International aid can potentially mitigate tensions between host country nationals and large refugee populations by fostering more altruistic attitudes and policies. This research, conducted over two months in Turkey through online surveys, examines the impact of different aid types—cash transfers, vocational training, and social cohesion programs—on Turkish nationals’ policy preferences and behaviors towards refugees. It explores how these effects vary by funding source (host government vs. international donors) and the framing of aid (supporting the local economy vs. refugee populations). The study finds that local attitudes are primarily influenced by economic concerns, suggesting that aid aimed at enhancing refugee self-sufficiency is viewed more favorably. This insight underscores the importance of strategically designed international aid programs in improving refugee integration and fostering positive relations between refugees and host country citizens.
+              </p>
+            </div>
+          </li>
+
+          <li> <a href="https://osf.io/preprints/osf/9ahtp" target="_blank">How Populist Incumbents Use Strategic Communication to Survive Economic Crises: The Surprising Effectiveness of Incumbent Economic Appeals
+          </a>            
+            (with Andrew O’Donohue)
+            <br>
+      <div style="text-align: center;">
+            <button onclick="toggleAbstract('abstract5')">Show Abstract</button>
+          </div>
+            <div id="abstract5" style="display:none; margin-top:10px;">
+              <p>
+                How do populist incumbents use strategic communication to survive economic crises? To persuade voters, incumbents generally—and populist incumbents specifically—may
+deploy two communication strategies. First, to reduce the salience of their poor economic performance, incumbents can shift the agenda to sociocultural issues. Alternatively, despite presiding over economic crisis, incumbents can employ economic
+appeals by emphasizing their economic competence and the opposition’s incompetence. To test the effectiveness of these strategies, we conducted an ethnographically informed survey experiment with 2,400 Turkish citizens before Turkey’s 2023 election,
+in which respondents were exposed to rhetoric simulating the incumbent’s campaign messaging about sociocultural or economic issues. Whereas incumbent sociocultural rhetoric had no marginal effect, economic appeals increased respondents’ approval of
+the incumbent’s economic management and overall performance. Incumbent appeals about mega-projects and economic nationalism emerge as key mechanisms increasing approval of the incumbent. Surprisingly, incumbent economic appeals were effective even amid economic crisis.
+              </p>
+            </div>
+          </li>
           <li>
             <a href="https://arxiv.org/abs/2305.13302" target="_blank">Language-Agnostic Bias Detection in Language Models with Bias Probing </a>
             (with Abdullatif Koksal, Omer Faruk Yalcin, M. Tahir Kilavuz, Anna Korhonen, Hinrich Schutze)
@@ -259,18 +295,6 @@ transition: background-color 0.3s ease, transform 0.3s ease;
             <div id="abstract2" style="display:none; margin-top:10px;">
               <p>
                 Pretrained language models (PLMs) are key components in NLP, but they contain strong social biases. Quantifying these biases is challenging because current methods focusing on fill-the-mask objectives are sensitive to slight changes in input. To address this, we propose a bias probing technique called LABDet, for evaluating social bias in PLMs with a robust and language-agnostic method. For nationality as a case study, we show that LABDet `surfaces' nationality bias by training a classifier on top of a frozen PLM on non-nationality sentiment detection. We find consistent patterns of nationality bias across monolingual PLMs in six languages that align with historical and political context. We also show for English BERT that bias surfaced by LABDet correlates well with bias in the pretraining data; thus, our work is one of the few studies that directly links pretraining data to PLM behavior. Finally, we verify LABDet's reliability and applicability to different templates and languages through an extensive set of robustness checks.
-              </p>
-            </div>
-          </li>
-          <li> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4781005" target="_blank">Aiding Harmony: How International Aid Shapes Local Policy Preferences and Behavior toward Refugees</a>            
-            (with Melani Cammett)
-            <br>
-      <div style="text-align: center;">
-            <button onclick="toggleAbstract('abstract4')">Show Abstract</button>
-          </div>
-            <div id="abstract4" style="display:none; margin-top:10px;">
-              <p>
-                A key challenge for countries with large refugee populations is to establish policies that help refugees while ensuring that host country nationals do not resent them. International aid can potentially mitigate tensions between host country nationals and large refugee populations by fostering more altruistic attitudes and policies. This research, conducted over two months in Turkey through online surveys, examines the impact of different aid types—cash transfers, vocational training, and social cohesion programs—on Turkish nationals’ policy preferences and behaviors towards refugees. It explores how these effects vary by funding source (host government vs. international donors) and the framing of aid (supporting the local economy vs. refugee populations). The study finds that local attitudes are primarily influenced by economic concerns, suggesting that aid aimed at enhancing refugee self-sufficiency is viewed more favorably. This insight underscores the importance of strategically designed international aid programs in improving refugee integration and fostering positive relations between refugees and host country citizens.
               </p>
             </div>
           </li>
