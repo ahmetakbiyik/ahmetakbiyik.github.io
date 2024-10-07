@@ -27,9 +27,10 @@
 
   <style>
     body {
-      font-family: 'Poppins', sans-serif;
+       font-family: 'Montserrat';  /* Ensure font consistency */
       color: #333;
       margin: 0;
+      font-size: 17px;
       padding: 0;
       overflow-x: hidden;
       display: flex;
@@ -67,8 +68,10 @@
       text-decoration: none;
       margin: 0 10px;
       border-radius: 5px;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-    }
+transition: background-color 0.3s ease, transform 0.3s ease;
+      font-size: 1em;
+
+ /* Change this value to adjust the font size */    }
     .topnav a:hover {
       background-color: #ad1445;
       transform: scale(1.1);
@@ -81,8 +84,25 @@
       color: #fff;
       border-radius: 5px;
       cursor: pointer;
-      transition: background-color 0.3s ease, transform 0.3s ease;
+transition: background-color 0.3s ease, transform 0.3s ease;
+font-size: 1em;
+
+ /* Change this value to adjust the font size */
+
     }
+
+    #abstract, #abstract1, #abstract2, #abstract3, #abstract4 {
+    font-family: 'Montserrat';  /* Ensure font consistency */
+    font-size: 1em;
+
+  /* Adjust font size if necessary */
+    margin-top: 3px;
+    margin-bottom: 10px;  /* Adds space below the abstract */
+    line-height: 1.6;  /* Adjust line height for readability */
+    color: #333;
+    
+  
+  }
     button:hover {
       background-color: #ad1445;
       transform: scale(1.05);
@@ -99,6 +119,34 @@
       height: 2px;
       background-color: #ad1445;
     }
+
+     /* Basic styles for the popup */
+     .popup {
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Black background with transparency */
+            justify-content: center;
+            align-items: center;
+        }
+
+        .popup img {
+            max-width: 90%; /* Responsive max width */
+            max-height: 90%; /* Responsive max height */
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            
+            cursor: pointer;
+        }
 
     
 
@@ -130,7 +178,7 @@
           width: 50px; /* Set the width */
           height: 50px; /* Set the height */
           border-radius: 10px; /* Set to 0 for sharp corners, or a small value for slight rounding */
-          font-size: 24px;
+          
           cursor: pointer;
           display: flex;
           align-items: center;
@@ -149,7 +197,7 @@
 
       .menu-toggle.open::before {
           content: "\00d7"; /* Unicode for '×' (close icon) */
-          font-size: 30px;
+       
       }
       header img {
         width: 150px; /* Adjust the width for mobile */
@@ -220,9 +268,23 @@
               <p>
                 Attitudes toward an outgroup (such as refugees), even when not rooted in empirical evidence, can be difficult to alter, and correcting misperceptions often has limited impact. In my dissertation, I am conducting a randomized controlled trial (RCT) to explore strategies for changing these resistant attitudes. My study involves bringing together individuals from diverse backgrounds into WhatsApp groups, where they engage in non-political interactions. After these interactions, I introduce fact-checked information about their outgroup to see if this prior engagement makes participants more open to accepting the information. By lowering barriers created by prior beliefs through non-political interaction, fact-checked information may have a more significant impact on attitudes toward the outgroup.
               </p>
+              
+
+                <p>
+                  Click on the image to view my research design summary:
+                  </p>
               <p>
-                <a href="https://www.dropbox.com/scl/fi/xnhuf4vot06mtpesr7587/Akbiyik_research_design_APSA2024.pdf?rlkey=lt222wrc5gls85xxtv52unwvt&dl=0">Link for my dissertation research design</a>
+                <img src="public/framework.png" alt="Description of image" style="max-width:100%; height:auto;" onclick="openPopup()">
+                  </p>
+
+                  <p>
+                <a href="https://www.dropbox.com/scl/fi/xnhuf4vot06mtpesr7587/Akbiyik_research_design_APSA2024.pdf?rlkey=lt222wrc5gls85xxtv52unwvt&dl=0">Link for my pre-analysis plan</a>
                 </p>
+                  <div id="popup" class="popup" onclick="closePopup()">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <img src="public/framework.png" alt="Description of image">
+    </div>
+
             </div>
         
         <h2>Contact</h2>
@@ -255,6 +317,15 @@
     
   </script>
   <script>
+        function openPopup() {
+            document.getElementById("popup").style.display = "flex"; // Show the popup
+        }
+
+        function closePopup() {
+            document.getElementById("popup").style.display = "none"; // Hide the popup
+        }
+    </script>
+  <script>
     function toggleAbstract(id) {
       var abstractDiv = document.getElementById(id);
       if (abstractDiv.style.display === 'none') {
@@ -282,4 +353,4 @@
     
   </script>
 </body>
-</html>
+</html> 

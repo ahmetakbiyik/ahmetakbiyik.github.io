@@ -18,7 +18,8 @@ Version      : 1.0
         padding: 0px 100px;
     }
     .about-image-part h2 {
-    font-size: 30px;
+    font-size: 1em;
+
 }
 .about-social ul li {
     display: inline-block;
@@ -127,7 +128,8 @@ Version      : 1.0
     }
 
     .section-title h2 {
-        font-size: 30px;
+        font-size: 1em;
+
     }
 
 
@@ -202,14 +204,16 @@ Version      : 1.0
 
 
     .about-content-part h2 {
-        font-size: 30px;
+        font-size: 1em;
+
         line-height: 40px;
         margin-bottom: 20px;
         margin-top: 30px;
     }
 
     .section-title h2 {
-        font-size: 30px;
+        font-size: 1em;
+
     }
 
     .hero-content .job {
@@ -231,7 +235,8 @@ Version      : 1.0
     }
 
     .call-to-action-part h2 {
-        font-size: 30px;
+        font-size: 1em;
+
         line-height: 40px;
     }
 
@@ -261,7 +266,8 @@ Version      : 1.0
     }
 
     .single-project-page-design h1 {
-        font-size: 30px;
+        font-size: 1em;
+
     }
 
     .about-image-part {
@@ -308,7 +314,8 @@ Version      : 1.0
     }
 
     .hero-counter-area .count-text {
-        font-size: 30px;
+        font-size: 1em;
+
     }
 
     .hero-counter-area .counter-title {
@@ -1008,7 +1015,8 @@ Version      : 1.0
 
 @media only screen and (max-width: 375px) {
     .breadcrumb {
-        font-size: 16px;
+        font-size: 1em;
+
     }
 }
 
@@ -1115,7 +1123,8 @@ Version      : 1.0
 
 @media only screen and (max-width: 479px) {
     .project-content h2 {
-        font-size: 30px;
+        font-size: 1em;
+
         line-height: 1.3;
     }
 }
@@ -1277,7 +1286,8 @@ Version      : 1.0
 
 @media only screen and (max-width: 375px) {
     .widget-recent-news ul li h5 {
-        font-size: 16px;
+        font-size: 1em;
+
     }
 }
 
