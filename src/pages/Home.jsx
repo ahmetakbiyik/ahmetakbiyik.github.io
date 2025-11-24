@@ -56,6 +56,20 @@ const Home = () => {
                         <p>
                             My Ph.D. research examined disinformation and intergroup relations across digital platforms such as Facebook, X, WhatsApp, and Telegram. I conducted survey studies and collaborated with colleagues on projects in diverse regions, including Sweden, Turkey, and Lebanon, focusing on how disinformation influences individual attitudes and intergroup dynamics.
                         </p>
+
+                        <p>
+                            <p>
+                                Outside of research, I love photography. It allows me to capture moments of everyday life and the beauty of nature. Here are some of my favorite photos on my{" "}
+                                <a
+                                    href="https://www.instagram.com/ahmetakbiyik.jpeg"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="text-blue-600 hover:underline"
+                                >
+                                    Instagram
+                                </a>.
+                            </p>
+                        </p>
                     </div>
 
                     <div className="card">
