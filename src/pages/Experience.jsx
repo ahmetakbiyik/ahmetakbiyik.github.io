@@ -54,10 +54,10 @@ const Experience = () => {
             organization: "Meta",
             period: "2025 - Present, US",
             details: [
-                "Led projects that informed product strategy and guided investment decisions",
-                "Designed evidence-based interventions to improve user experience",
-                "Conducted large-scale experiments to measure impact of product features",
-                "Collaborated with cross-functional teams to translate research insights into actionable recommendations"
+                "Led projects that informed product strategy and guided investment decisions.",
+                "Designed evidence-based interventions to improve user experience.",
+                "Conducted large-scale experiments to measure impact of product features.",
+                "Collaborated with cross-functional teams to translate research insights into actionable recommendations."
             ]
         },
         {
@@ -65,10 +65,9 @@ const Experience = () => {
             organization: "Galata Survey Research",
             period: "2023 - 2025, Turkey",
             details: [
-                "Co-founded a survey research consultancy focused on delivering data-driven insights for social and political issues",
-                "Designed and conducted surveys for various clients including political parties, NGOs, and media organizations",
-                "Specialized in public opinion research, election polling, and social attitudes measurement",
-                "Provided strategic consulting based on data analysis and research findings"
+                "Co-founded a survey research consultancy focused on delivering data-driven insights for social and political issues.",
+                "Built research and technical teams to develop a platform for running surveys and accessing participant pools.",
+                "Provided strategic consulting based on data analysis and research findings."
             ]
         },
         {
