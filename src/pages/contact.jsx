@@ -1,28 +1,48 @@
-import React from 'react'
-import ContactOption from '../components/sections/contact/contactOption'
-import ContactForm from '../components/sections/contact/contactForm'
+import React from 'react';
 
 const Contact = () => {
   return (
-    <section id="contact" class="contact-area innerpage-single-area">
-      <div class="container">
-        <div class="container-inner">
-          <div class="row">
-            <div class="col-xl-12 col-lg-12">
-              <div class="section-title text-center wow fadeInUp delay-0-2s">
-                <p>contact</p>
-                <h2>Get in Touch with Me!</h2>
-              </div>
+    <div className="section">
+      <div className="container">
+        <div style={{ maxWidth: '600px', margin: '0 auto', textAlign: 'center' }}>
+          <h1 style={{ marginBottom: 'var(--spacing-lg)' }}>Get in Touch</h1>
+
+          <div className="card">
+            <p style={{ fontSize: '1.1rem', marginBottom: 'var(--spacing-lg)' }}>
+              I'm always interested in discussing research collaborations, speaking opportunities,
+              or potential projects. Feel free to reach out!
+            </p>
+
+            <div style={{ marginBottom: 'var(--spacing-lg)' }}>
+              <h3 style={{ fontSize: '1rem', color: 'var(--color-text-muted)', marginBottom: '0.5rem' }}>
+                Email
+              </h3>
+              <a
+                href="mailto:ahmetutkuakbiyik@gmail.com"
+                style={{ fontSize: '1.1rem', fontWeight: '500' }}
+              >
+                ahmetutkuakbiyik@gmail.com
+              </a>
             </div>
-          </div>
-          <div class="row">
-            <ContactOption />
-            <ContactForm />
+
+
+
+            <div style={{
+              padding: 'var(--spacing-md)',
+              background: 'var(--color-bg)',
+              borderRadius: 'var(--radius-sm)',
+              marginTop: 'var(--spacing-lg)'
+            }}>
+              <h3 style={{ fontSize: '1rem', marginBottom: '0.5rem' }}>Location</h3>
+              <p style={{ marginBottom: '0' }}>
+                Based in Palo Alto, CA
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-  )
-}
+    </div>
+  );
+};
 
-export default Contact
+export default Contact;

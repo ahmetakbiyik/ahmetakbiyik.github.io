@@ -9,12 +9,7 @@ const Footer = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6">
-                            <div className="copyright-text">
-                                <p>
-                                    Copyright @{year}, <Link to="/">Bentos</Link> All
-                                    Rights Reserved.
-                                </p>
-                            </div>
+
                         </div>
                         <div className="col-lg-6">
                             <div className="copyright-text extra-copyright">

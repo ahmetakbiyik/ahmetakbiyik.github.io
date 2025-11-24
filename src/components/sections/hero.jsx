@@ -23,7 +23,7 @@ const Hero = () => {
                                 <h2>Ahmet Akbiyik</h2>
                                 <p>PhD Candidate</p>
                                 <p>POlitical Economy and Government</p>
-                                <p>Harvard Kennedy School</p>
+                                <p>Harvard University</p>
                                 <div className="about-social text-center">
                                     <ul>
                                         {/* <li><Link to=""><RiFacebookCircleFill size={20} /></Link></li> */}
