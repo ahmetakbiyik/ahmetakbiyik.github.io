@@ -59,7 +59,7 @@ const Navbar = () => {
                     ))}
                     <li>
                         <a
-                            href="/Ahmet_CV_wb.pdf"
+                            href={`${import.meta.env.BASE_URL}Ahmet_CV_wb.pdf`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="nav-link"
