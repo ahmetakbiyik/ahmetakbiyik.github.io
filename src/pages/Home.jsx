@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import profileImage from '../../img/profile2.png';
 
 const Home = () => {
     return (
@@ -7,7 +8,7 @@ const Home = () => {
             <div className="container">
                 <div className="profile-header">
                     <img
-                        src="/img/profile2.png"
+                        src={profileImage}
                         alt="Ahmet Akbiyik"
                         className="profile-img"
                     />
