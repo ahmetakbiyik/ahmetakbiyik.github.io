@@ -59,7 +59,7 @@ const Navbar = () => {
                     ))}
                     <li>
                         <a
-                            href={`${import.meta.env.BASE_URL}Ahmet_CV_wb.pdf`}
+                            href="https://www.dropbox.com/scl/fi/tawnn6g08f4wy1puk7r1y/Ahmet_CV_wb.pdf?rlkey=5v6evndnxp48mggsvwa8qpxsi&dl=0"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="nav-link"
