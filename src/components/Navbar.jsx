@@ -59,7 +59,7 @@ const Navbar = () => {
                     ))}
                     <li>
                         <a
-                            href="https://www.dropbox.com/scl/fi/tawnn6g08f4wy1puk7r1y/Ahmet_CV_wb.pdf?rlkey=5v6evndnxp48mggsvwa8qpxsi&dl=0"
+                            href="https://www.dropbox.com/scl/fo/d3o42qwa3ig6me0apclei/ADs5OQZDG7VCXqPNroJeN9w?rlkey=7mko0c0lsmf9oc4jmzxa6p17g&dl=0"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="nav-link"
