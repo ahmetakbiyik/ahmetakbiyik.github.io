@@ -49,7 +49,7 @@ const Home = () => {
                     <div className="card" style={{ marginBottom: 'var(--spacing-lg)' }}>
                         <h2>About Me</h2>
                         <p>
-                            I am a researcher and data scientist focused on harnessing data, technology, and rigorous research to develop impactful solutions for online interactions. As a Quantitative UX Researcher at Meta, I have led projects that informed product strategy, designed evidence-based interventions, and conducted experiments to guide investment decisions.
+                            I am a researcher and data scientist who studies online behavior through experiments and causal analysis, drawing on behavioral data, surveys, and qualitative interviews to turn findings into product decisions. My work centers on AI systems: the human data behind them, how people respond to them, and how they perform in production.
                         </p>
                         <p>
                             I hold a Ph.D. in Political Economy and Government from Harvard University. My research centers on migration, social cohesion, and the role of digital platforms in shaping intergroup relations. My work has been supported by The Weatherhead Center for International Affairs and The Institute for Quantitative Social Science (IQSS), and has received grants from J-PAL at MIT and The Stone Program at Harvard.
