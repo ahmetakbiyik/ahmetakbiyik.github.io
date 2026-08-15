@@ -54,10 +54,10 @@ const Experience = () => {
             organization: "Meta",
             period: "2025 - Present, US",
             details: [
-                "Led projects that informed product strategy and guided investment decisions.",
-                "Designed evidence-based interventions to improve user experience.",
-                "Conducted large-scale experiments to measure impact of product features.",
-                "Collaborated with cross-functional teams to translate research insights into actionable recommendations."
+                "Lead research end to end, scoping studies with external vendors and running experiments and causal analyses that inform product strategy and investment decisions.",
+    "Built an AI-supported research pipeline pairing unmoderated interviews with AI-assisted analysis, taking a hypothesis to a product decision in days rather than weeks.",
+    "Design evidence-based interventions and measure their impact through large-scale experiments and quasi-experimental analysis.",
+    "Partner with product, engineering, and design to turn research findings into decisions teams act on."
             ]
         },
         {
@@ -65,9 +65,10 @@ const Experience = () => {
             organization: "Galata Survey Research",
             period: "2023 - 2025, Turkey",
             details: [
-                "Co-founded a survey research consultancy focused on delivering data-driven insights for social and political issues.",
-                "Built research and technical teams to develop a platform for running surveys and accessing participant pools.",
-                "Provided strategic consulting based on data analysis and research findings."
+                "Co-founded an Istanbul-based survey research company serving academic and commercial clients.",
+                "Built the engineering and research teams behind the company's survey platform, nationwide participant panel, and proprietary data quality systems.",
+                "Established a data labeling operation producing human-annotated data for LLM fine-tuning.",
+                "Advised clients on research design and translated findings into strategy recommendations."
             ]
         },
         {
