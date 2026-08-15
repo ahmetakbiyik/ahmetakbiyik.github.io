@@ -44,48 +44,36 @@ const Home = () => {
                         </a>
                     </div>
                 </div>
-
                 <div style={{ maxWidth: '800px', margin: '0 auto' }}>
                     <div className="card" style={{ marginBottom: 'var(--spacing-lg)' }}>
                         <h2>About Me</h2>
                         <p>
-I am a researcher and data scientist who studies online behavior through experiments and causal analysis, drawing on behavioral data, surveys, and qualitative interviews to turn findings into product decisions. My work centers on AI systems: the human data behind them, how people respond to them, and how they perform in production.
+                            I am a researcher and data scientist who studies online behavior through experiments and causal analysis, drawing on behavioral data, surveys, and qualitative interviews to turn findings into product decisions. My work centers on AI systems: the human data behind them, how people respond to them, and how they perform in production.
                         </p>
-
                         <p>
-As a Quantitative UX Researcher at Meta, I lead projects end to end, scoping studies with external research vendors, designing evidence-based interventions, and running experiments and causal analyses that inform product strategy and guide investment decisions. I also built an AI-supported research pipeline, combining unmoderated interviews with AI-assisted analysis, that takes a hypothesis to a product decision in days rather than weeks. My current work focuses on integrating AI solutions into Meta’s advertising platform.
+                            As a Quantitative UX Researcher at Meta, I lead projects end to end, scoping studies with external research vendors, designing evidence-based interventions, and running experiments and causal analyses that inform product strategy and guide investment decisions. I also built an AI-supported research pipeline, combining unmoderated interviews with AI-assisted analysis, that takes a hypothesis to a product decision in days rather than weeks. My current work focuses on integrating AI solutions into Meta&rsquo;s advertising platform.
                         </p>
-                        
                         <p>
-Before joining Meta, I co-founded Galata Anket, an Istanbul-based survey research company, where I built the engineering and research teams behind its survey platform, participant panel, and a data labeling operation for fine-tuning LLMs.
+                            Before joining Meta, I co-founded Galata Anket, an Istanbul-based survey research company, where I built the engineering and research teams behind its survey platform, participant panel, and a data labeling operation for fine-tuning LLMs.
                         </p>
-
-                        
                         <p>
-I hold a Ph.D. in Political Economy and Government from Harvard University. My research centers on migration, social cohesion, and the role of digital platforms in shaping intergroup relations. My work has been supported by the Weatherhead Center for International Affairs and the Institute for Quantitative Social Science (IQSS), and has received grants from J-PAL at MIT and the Stone Program at Harvard.
+                            I hold a Ph.D. in Political Economy and Government from Harvard University. My research centers on migration, social cohesion, and the role of digital platforms in shaping intergroup relations. My work has been supported by the Weatherhead Center for International Affairs and the Institute for Quantitative Social Science (IQSS), and has received grants from J-PAL at MIT and the Stone Program at Harvard.
                         </p>
-
                         <p>
-My Ph.D. research examined disinformation and intergroup relations across digital platforms such as Facebook, X, WhatsApp, and Telegram. I conducted experimental studies and collaborated with colleagues on projects in diverse regions, including Sweden, Turkey, and Lebanon, focusing on how disinformation influences individual attitudes and intergroup dynamics.                            
-<p>
+                            My Ph.D. research examined disinformation and intergroup relations across digital platforms such as Facebook, X, WhatsApp, and Telegram. I conducted experimental studies and collaborated with colleagues on projects in diverse regions, including Sweden, Turkey, and Lebanon, focusing on how disinformation influences individual attitudes and intergroup dynamics.
                         </p>
-
-
-
-
-                                Outside of research, I love photography. It allows me to capture moments of everyday life and the beauty of nature. Here are some of my favorite photos on my{" "}
-                                <a
-                                    href="https://www.instagram.com/ahmetakbiyik.jpeg"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-blue-600 hover:underline"
-                                >
-                                    Instagram
-                                </a>.
-                            </p>
+                        <p>
+                            Outside of research, I love photography. It allows me to capture moments of everyday life and the beauty of nature. Here are some of my favorite photos on my{" "}
+                            <a
+                                href="https://www.instagram.com/ahmetakbiyik.jpeg"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-600 hover:underline"
+                            >
+                                Instagram
+                            </a>.
                         </p>
                     </div>
-
                     <div className="card">
                         <h2>Education</h2>
                         <div style={{ marginBottom: 'var(--spacing-md)' }}>
@@ -110,7 +98,6 @@ My Ph.D. research examined disinformation and intergroup relations across digita
                             </p>
                         </div>
                     </div>
-
                     <div style={{ marginTop: 'var(--spacing-lg)', textAlign: 'center' }}>
                         <Link to="/research" className="btn">View My Research</Link>
                         <Link to="/contact" className="btn btn-outline" style={{ marginLeft: 'var(--spacing-md)' }}>
