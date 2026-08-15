@@ -56,6 +56,12 @@ const Research = () => {
 
     const preprints = [
         {
+            title: "Language-Agnostic Bias Detection in Language Models with Bias Probing",
+            authors: "with Abdullatif Koksal, Omer Faruk Yalcin, M. Tahir Kilavuz, Anna Korhonen, Hinrich Schutze",
+            link: "https://arxiv.org/abs/2305.13302",
+            abstract: "Pretrained language models (PLMs) are key components in NLP, but they contain strong social biases. Quantifying these biases is challenging because current methods focusing on fill-the-mask objectives are sensitive to slight changes in input. To address this, we propose a bias probing technique called LABDet, for evaluating social bias in PLMs with a robust and language-agnostic method. For nationality as a case study, we show that LABDet surfaces nationality bias by training a classifier on top of a frozen PLM on non-nationality sentiment detection. We find consistent patterns of nationality bias across monolingual PLMs in six languages that align with historical and political context."
+        },
+        {
             title: "Aiding Harmony: How International Aid Shapes Local Policy Preferences and Behavior toward Refugees",
             authors: "with Melani Cammett",
             link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4781005",
@@ -66,13 +72,8 @@ const Research = () => {
             authors: "with Andrew O'Donohue",
             link: "https://osf.io/preprints/osf/9ahtp",
             abstract: "How do populist incumbents use strategic communication to survive economic crises? To persuade voters, incumbents generally—and populist incumbents specifically—may deploy two communication strategies. First, to reduce the salience of their poor economic performance, incumbents can shift the agenda to sociocultural issues. Alternatively, despite presiding over economic crisis, incumbents can employ economic appeals by emphasizing their economic competence and the opposition's incompetence. To test the effectiveness of these strategies, we conducted an ethnographically informed survey experiment with 2,400 Turkish citizens before Turkey's 2023 election, in which respondents were exposed to rhetoric simulating the incumbent's campaign messaging about sociocultural or economic issues. Whereas incumbent sociocultural rhetoric had no marginal effect, economic appeals increased respondents' approval of the incumbent's economic management and overall performance."
-        },
-        {
-            title: "Language-Agnostic Bias Detection in Language Models with Bias Probing",
-            authors: "with Abdullatif Koksal, Omer Faruk Yalcin, M. Tahir Kilavuz, Anna Korhonen, Hinrich Schutze",
-            link: "https://arxiv.org/abs/2305.13302",
-            abstract: "Pretrained language models (PLMs) are key components in NLP, but they contain strong social biases. Quantifying these biases is challenging because current methods focusing on fill-the-mask objectives are sensitive to slight changes in input. To address this, we propose a bias probing technique called LABDet, for evaluating social bias in PLMs with a robust and language-agnostic method. For nationality as a case study, we show that LABDet surfaces nationality bias by training a classifier on top of a frozen PLM on non-nationality sentiment detection. We find consistent patterns of nationality bias across monolingual PLMs in six languages that align with historical and political context."
         }
+        
     ];
 
     const workingPapers = [
